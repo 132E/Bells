@@ -1,12 +1,12 @@
 const { Router } = require("express");
 const router = Router();
-const controllers = require("../controllers/");
+const controllers = require("../controllers/index");
 
-router.get("/bugs", controllers.getBugs);
-router.get("/bugs/:id", controllers.getBugById);
-router.post("/bugs", controllers.createBug);
-router.put("/bugs/:id", controllers.updateBug);
-router.delete("/bugs/:id", controllers.deleteBug);
+router.get("/bug", controllers.getBugs);
+router.get("/bug/:id", controllers.getBugById);
+router.post("/bug", controllers.createBug);
+router.put("/bug/:id", controllers.updateBug);
+router.delete("/bug/:id", controllers.deleteBug);
 
 // router.get("/fishes", controllers.getFishes);
 // router.get("/fishes/:id", controllers.getFishById);
