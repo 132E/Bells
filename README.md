@@ -36,7 +36,9 @@ Make an app that people who are playing Animal Crossing New Horizons can look up
 
 Link: [Figma Components](https://www.figma.com/file/QOsLHHkW024hwOhYz77cbQ/components?node-id=0%3A1)
 
-<!-- ![Image](https://i.imgur.com/KNsOLvH.png) -->
+Link: [Home Page MU](https://www.figma.com/file/dKd2GmND7ordizDLQoqNcN/Bell-Stacking-HP-MockUp?node-id=0%3A1)
+
+![Image](https://i.imgur.com/VId80ea.png)
 
 ---
 
