@@ -1,5 +1,5 @@
 const db = require("../db");
-const Bug = require("../models/Bug.js");
+const Bug = require("../models/fish");
 
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
@@ -118,14 +118,11 @@ const main = async () => {
       totalCatches: 0,
     },
   ];
-
-  await bugs.insertMany(bugs);
+  await Bug.insertMany(bugs);
   console.log("Created some bugs!");
 };
-
 const run = async () => {
   await main();
   db.close();
 };
-
 run();

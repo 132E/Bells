@@ -2,13 +2,15 @@ const { Bug } = require("../models/index.js");
 
 // BUGS
 const getBugs = async (req, res) => {
-  // console.log(Bug);
-  // res.send("banana");
+  console.log("getBugs");
+  console.log(Bug);
+  console.log(req);
   try {
-    const bugs = await Bug.find({});
-    return res.status(200).json(bugs);
+    const bugs = await Bug.find();
+    console.log(bugs);
+    return res.status(200).json({ bugs });
   } catch (error) {
-    throw error;
+    return res.status(500).send(error.message);
   }
 };
 const getBugById = async (req, res) => {
@@ -58,14 +60,4 @@ module.exports = {
   createBug,
   updateBug,
   deleteBug,
-  // getFishes,
-  // getFishById,
-  // createFish,
-  // updateFish,
-  // deleteFish,
-  // getSeaCritters,
-  // getSeaCritterById,
-  // createSeaCritter,
-  // updateSeaCritter,
-  // deleteSeaCritter,
 };

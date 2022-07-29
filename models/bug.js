@@ -13,5 +13,4 @@ const Bug = new Schema(
   },
   { timestamps: true }
 );
-
 module.exports = Bug;
