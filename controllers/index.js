@@ -2,9 +2,6 @@ const { Bug } = require("../models/index.js");
 
 // BUGS
 const getBugs = async (req, res) => {
-  console.log("getBugs");
-  console.log(Bug);
-  console.log(req);
   try {
     const bugs = await Bug.find();
     console.log(bugs);
