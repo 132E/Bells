@@ -1,5 +1,5 @@
 const db = require("../db");
-const SeaCritter = require("../models/seaCritter");
+const { SeaCritter } = require("../models");
 
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 

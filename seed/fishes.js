@@ -1,5 +1,5 @@
 const db = require("../db");
-const Fish = require("../models/fish");
+const { Fish } = require("../models");
 
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
@@ -106,7 +106,6 @@ const main = async () => {
       totalCatches: 0,
     },
   ];
-
   await Fish.insertMany(fishes);
   console.log("Created some fishes!");
 };
@@ -114,5 +113,4 @@ const run = async () => {
   await main();
   db.close();
 };
-
 run();

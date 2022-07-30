@@ -1,5 +1,4 @@
-const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
+const { Schema } = require("mongoose");
 
 const seaCritter = new Schema(
   {
@@ -15,4 +14,4 @@ const seaCritter = new Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("seaCritter", seaCritter);
+module.exports = seaCritter;
