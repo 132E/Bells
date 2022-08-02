@@ -24,7 +24,7 @@ const createBug = async (req, res) => {
 // Get a bug by id
 const getOneBug = async (req, res) => {
   try {
-    let foundBug = await Bug.findById(req.params.id);
+    let foundBug = await Bug.findById(req.params.id).populate("BugComments");
     if (foundBug) {
       return res.status(200).json({ foundBug });
     }
