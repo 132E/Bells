@@ -10,7 +10,7 @@ const Bug = new Schema(
     weather: { type: String, required: true },
     timeOfDay: { type: String, required: true },
     totalCatches: { type: Number, required: true },
-    comments: [{ type: Schema.Types.ObjectId, ref: "BugComment" }],
+    comments: [{ type: Schema.Types.ObjectId, ref: "BugComments" }],
   },
   { timestamps: true }
 );

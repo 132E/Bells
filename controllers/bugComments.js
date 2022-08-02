@@ -4,7 +4,7 @@ const { BugComment, Bug } = require("../models");
 const getAllBugComments = async (req, res) => {
   try {
     let bugComments = await BugComment.find({});
-    return res.status(200).json({ bugComments });
+    res.send(bugComments);
   } catch (error) {
     throw error;
   }
@@ -27,7 +27,7 @@ const createBugComment = async (req, res) => {
 const getComment = async (req, res) => {
   try {
     let comment = await BugComment.findById(req.params.id);
-    ("Bug");
+    ("Bugs");
     return res.status(200).json({ comment });
   } catch (error) {
     throw error;
