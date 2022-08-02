@@ -16,5 +16,7 @@ router.get("/fishes/:id", fishes.getOneFish);
 
 // SEA CRITTERS
 router.get("/critters", seaCritters.getAllSeaCritters);
+router.post("/critters", seaCritters.createSeaCritter);
+router.get("/critters/:id", seaCritters.getOneSeaCritter);
 
 module.exports = router;
