@@ -1,21 +1,93 @@
-.App {
+body{
+  margin: 0;
+  padding: 0;
   text-align: center;
+  font-family: 'Roboto Slab', serif;
+  background-image: url("https://i.imgur.com/eU2kcc9.png");
 }
 
-img {
-  height: 20vmin;
-  pointer-events: none;
-} 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.nav-links > a {
+  font-size: 3vh;
+
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links > a, #logo > a {
+  color: #ffffff;
+  text-decoration: none;
+  width: 25vw;
+  height: 10vh;
+  user-select: none;
+}
+
+.nav-links > a:hover, #logo > a:hover {
+  color: #ffcc00;
+}
+
+nav {
+  background-color: #00A358;
+  color: #ffffff;
+  height: 10vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-links {
+  width: 75vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.active {
+  background-color:#019551;
+}
+
+
+#logo {
+  
+  width: 25vw;
+  height: 10vh;
+  line-height: 10vh;
+  padding: 20px;
+}
+
+.home {
+  margin-top:100px;
+  margin-bottom:100px;
+  display: flex-column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
+.home > h1 {
+  font-size: 5vh;
+  color: #65461F;
+  font-family: 'Roboto Slab', serif;
+}
 
+footer {
+  align-items: center;
+  width: ;
+}
+
+.home-logo {
+  width: 25vw;
+  display: inline;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

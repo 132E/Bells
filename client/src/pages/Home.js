@@ -1,7 +1,10 @@
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="home">
+      <div className="home-logo">
+        <img src={"https://i.imgur.com/C8F4rDZ.png"} alt="Bells Logo" />
+      </div>
+      <h1>Bell Stacking</h1>
     </div>
   );
 };

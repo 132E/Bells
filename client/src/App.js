@@ -5,9 +5,9 @@ import React from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <div>
       <header>
         <Nav />
       </header>
@@ -17,8 +17,11 @@ function App() {
           <Route path="/bug" element={<BugList />} />
         </Routes>
       </main>
+      <footer>
+        <img src={"https://i.imgur.com/vjUbg9E.png"} alt="footer" />
+      </footer>
     </div>
   );
-}
+};
 
 export default App;
