@@ -69,7 +69,7 @@ nav {
   justify-content: center;
 }
 
-.home > h1 {
+h1 {
   font-size: 5vh;
   color: #65461F;
   font-family: 'Roboto Slab', serif;

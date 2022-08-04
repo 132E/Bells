@@ -1,7 +1,7 @@
 const BugList = () => {
   return (
     <div>
-      <h1>Bugs</h1>
+      <h1>BugList</h1>
     </div>
   );
 };
