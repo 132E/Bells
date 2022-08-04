@@ -17,6 +17,14 @@ const App = () => {
   const [bugs, setBugs] = useState([]);
   // const [fish, setFish] = useState([]);
 
+  // useEffect(() => {
+  //   const getBugs = async () => {
+  //     const res = await axios.get(`${BASE_URL}/api/bugs`);
+  //     setBugs(res.data);
+  //   };
+  //   getBugs();
+  // }, []);
+
   useEffect(() => {
     const getBugs = async () => {
       const res = await axios.get(`${BASE_URL}/api/bugs`);
