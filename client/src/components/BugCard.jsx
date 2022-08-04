@@ -1,6 +1,8 @@
-const BugCard = () => {
+const BugCard = ({bug}) => {
     return (
-        <div>BugCard</div>
+        <span className="bug-card">
+            <h3>{bug.name}</h3>
+        </span>
     )
 }
 export default BugCard

@@ -1,3 +1,9 @@
+import { Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { BASE_URL } from "./globals";
+import axios from "axios";
+import "./App.css";
+
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import BugList from "./pages/BugList";
@@ -6,16 +12,10 @@ import CommentForm from "./pages/CommentForm";
 import CommentDetails from "./pages/CommentDetails";
 import BugDetails from "./pages/BugDetails";
 import FishDetails from "./pages/FishDetails";
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { BASE_URL } from "./globals";
-import axios from "axios";
-
-import "./App.css";
 
 const App = () => {
   const [bugs, setBugs] = useState([]);
+  // const [fish, setFish] = useState([]);
 
   useEffect(() => {
     const getBugs = async () => {
@@ -33,8 +33,10 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/bugs" element={<BugList />} />
+          <Route path="/bugs" element={<BugList bugs={bugs} />} />
+
           <Route path="/fishes" element={<FishList />} />
+
           <Route
             path="/bugs/:bugId/comment/:commentId"
             element={<CommentDetails />}

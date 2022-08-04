@@ -1,6 +1,8 @@
 const CommentCard = () => {
     return (
-        <div>CommentCard</div>
+        <div>
+            <h1>CommentCard</h1>
+        </div>
     )
 }
 export default CommentCard

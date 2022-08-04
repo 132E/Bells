@@ -1,8 +1,13 @@
-const BugList = () => {
+const BugList = ({ bugs }) => {
   return (
-    <div>
+    <section className="page" id="bug-list">
       <h1>BugList</h1>
-    </div>
+      <div className="flex">
+        {bugs.map((bug) => (
+          <h4>{bug.name}</h4>
+        ))}
+      </div>
+    </section>
   );
 };
 
