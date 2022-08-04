@@ -15,22 +15,22 @@ import FishDetails from "./pages/FishDetails";
 
 const App = () => {
   const [bugs, setBugs] = useState([]);
-  // const [fish, setFish] = useState([]);
-
-  // useEffect(() => {
-  //   const getBugs = async () => {
-  //     const res = await axios.get(`${BASE_URL}/api/bugs`);
-  //     setBugs(res.data);
-  //   };
-  //   getBugs();
-  // }, []);
+  const [fishes, setFishes] = useState([]);
 
   useEffect(() => {
-    const getBugs = async () => {
+    const getAllBugs = async () => {
       const res = await axios.get(`${BASE_URL}/api/bugs`);
       setBugs(res.data);
     };
-    getBugs();
+    getAllBugs();
+  }, []);
+
+  useEffect(() => {
+    const getAllFishes = async () => {
+      const res = await axios.get(`${BASE_URL}/api/fishes`);
+      setFishes(res.data);
+    };
+    getAllFishes();
   }, []);
 
   return (
@@ -43,7 +43,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/bugs" element={<BugList bugs={bugs} />} />
 
-          <Route path="/fishes" element={<FishList />} />
+          <Route path="/fishes" element={<FishList fishes={fishes} />} />
 
           <Route
             path="/bugs/:bugId/comment/:commentId"

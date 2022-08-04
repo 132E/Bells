@@ -1,8 +1,8 @@
 const FishList = ({ fish }) => {
   return (
-    <div>
-      <h1>Fish List</h1>
-    </div>
+    <span>
+      <h1>Fish</h1>
+    </span>
   );
 };
 
